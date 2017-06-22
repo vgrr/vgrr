@@ -1,60 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>VGRR Database</title>
+<title>Page Title</title>
 </head>
 <body>
 
-<font face="verdana">
-<font size="2">
-  
-  
-    
 <style>
-.popup .popuptext {
-    visibility: hidden;
-    width: 210px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 140%;
-    left: -95%;
-    margin-left: 100px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
 blockquote{
   display:block;
   background: #fff;
@@ -116,7 +67,75 @@ blockquote a:hover{
 blockquote em{
   font-style: italic;
 }
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 210px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 140%;
+    left: -53%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
 </style>
+
+<html>
+  <head>
+    <title>
+      VGRR Database
+    </title>
+  </head>
+  <body>
+  <br><br><br><br><center>
+    <blockquote>
+    <b>Super Mario Sunshine - </b><div class="popup" onclick="myFunction()"><img src="https://raw.githubusercontent.com/vgrr/vgrr/master/img/ques_block.png" style="margin-top:-6px">
+  <span class="popuptext" id="myPopup">Developer - Nintendo<br>Platform - Gamecube<br> Released - 8-26-2002<br></span> <b> - </b> 
+      </div><b> </b><img src="https://raw.githubusercontent.com/vgrr/vgrr/master/img/rating/rated_e.png" style="margin-top:-6px">
+        <h1></h1><p>Mario and Peach go on a vacation to Isle Delfino, but their trip soon gets spoiled after an imposter disguised as Mario paints and pollutes the entire island. So now Mario must clear his name, and clean up the entire island! 
+  </body>
+  
 <script>
 // When the user clicks on <div>, open the popup
 function myFunction() {
@@ -124,22 +143,6 @@ function myFunction() {
     popup.classList.toggle("show");
 }
 </script>
-<html>
-  <head>
-    <title>
-      insert title here
-    </title>
-  </head>
-  <body>
-    <br><br><br><br><br><br><br><br><center>
-    <blockquote>
-      <b>Super Mario Sunshine - </b><div class="popup" onclick="myFunction()"><img src="https://raw.githubusercontent.com/vgrr/vgrr/master/img/ques_block.png" style="margin-top:-6px">
-  <span class="popuptext" id="myPopup">Developer - Nintendo<br>Platform - Gamecube<br> Released - 8-26-2002<br></span> <b> - </b> 
-      </div><b> </b><img src="https://raw.githubusercontent.com/vgrr/vgrr/master/img/rating/rated_e.png" style="margin-top:-6px">
-        <h1></h1><p>Mario and Peach go on a vacation to Isle Defino, but their trip soon gets spoiled after an imposter disguised as Mario paints and pollutes the entire island. So now Mario must clear his name, and clean up the entire island! 
-      <br><font size="2><sup>from IMDB</sup></font size>
-  </body>
-<script>
 </html>
 </body>
 </html>
